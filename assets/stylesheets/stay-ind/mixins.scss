@@ -1,0 +1,57 @@
+/* Red */
+
+$red:                  #D2232A !default;
+
+$red-darker:            darken($red, 10%) !default;
+$red-dark:              darken($red, 3%)   !default;
+$red-light:             lighten($red, 3%) !default;
+$red-lighter:           lighten($red, 10%) !default;
+
+/* White */
+
+$white: #fff;
+$grey: #eee;
+
+/* Blue */
+
+$blue: #2d76ed;
+$dark-blue: #115098;
+$turn-blue: #0173AF;
+$arrow-blue: #154275;
+$bottom-blue: #65BAF7;
+
+/* Green */
+$green: #45ba2e;
+$green-darker:          darken($green, 10%) !default;
+$green-dark:          darken($green, 3%) !default;
+    
+
+/* Yellow */
+$yellow: #FFD700;
+
+/* Navbar */
+
+// Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-color:                      $white !default;
+$navbar-inverse-bg:                         $arrow-blue !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 $white !default;
+$navbar-inverse-link-hover-color:           $white !default;
+$navbar-inverse-link-hover-bg:              $dark-blue !default;
+$navbar-inverse-link-active-color:          $white !default;
+$navbar-inverse-link-active-bg:             $arrow-blue !default;
+$navbar-inverse-link-disabled-color:        #d3d3d3 !default;
+$navbar-inverse-link-disabled-bg:           transparent !default;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $white !default;
+$navbar-inverse-brand-hover-color:          $white !default;
+$navbar-inverse-brand-hover-bg:             $dark-blue !default;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            $arrow-blue !default;
+$navbar-inverse-toggle-icon-bar-bg:         $white !default;
+$navbar-inverse-toggle-border-color:        $white !default;

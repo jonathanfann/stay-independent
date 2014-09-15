@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{% block title %}Title{% endblock %}</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+        {{ "style.css" | asset_url | stylesheet_tag }}
+        {% comment %} Style block allowing child pages to inject their own styles {% endcomment %}
+        {% block styles %}{% endblock %}
+<!--[if lte IE 9]>
+	<style>#hideonie, #lefttoright {display:none;} .navbar {display:block}</style>
+<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
+        <script src="/assets/javascripts/moderizr.min.js"></script>
+        <script src="/assets/javascripts/animate.min.js"></script>
+    </head>
+    <body>
+
+        {% include "navbar" %}
+        <div>
+<div class="loader"><img src="/assets/img/download.gif" /></div>
+            {% block content %}{% endblock %}
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        {{ "scripts.js" | asset_url | script_tag }}
+        {% comment %} Scripts block allowing child pages to inject their own styles {% endcomment %}
+        {% block scripts %}{% endblock %}
+        {% include "ga" %}
+<script>
+    smoothScroll.init();
+</script>
+<script src="/assets/javascripts/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+        
+<script type="text/javascript"> 
+var $buoop = {}; 
+$buoop.ol = window.onload; 
+window.onload=function(){ 
+ try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+ var e = document.createElement("script"); 
+ e.setAttribute("type", "text/javascript"); 
+ e.setAttribute("src", "//browser-update.org/update.js"); 
+ document.body.appendChild(e); 
+} 
+</script> 
+        
+        <!-- Google Analytics Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54810586-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+    </body>
+</html>

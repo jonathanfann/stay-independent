@@ -1,0 +1,265 @@
+/* Loader */
+
+/**************************************/
+/* CUSTOM STUFF */
+@import "stay-ind/mixins";
+@import "stay-ind/animate";
+/* /CUSTOM STUFF */
+/**************************************/
+
+/**************************************/
+/* BTS IMPORT */
+@import "bootstrap";
+/* /BTS IMPORT */
+/**************************************/
+
+
+#wrapper {
+	margin-top: 70px;
+}
+
+
+/**************************************/
+/* MEDIA QUERIES */
+@import "mediaqueries";
+/* /MEDIA QUERIES */
+/**************************************/
+
+#home {padding: 200px 0; max-width:100%;}
+
+#history {padding: 200px 0; max-width:100%;}
+
+
+.blueblue {background:$blue; color:$white; padding:300px 0;
+    
+}
+
+.blueblue2 {background:$blue; color:$white; padding:100px 0;
+    
+}
+
+.blueblue3 {
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #0A9EEA),
+	color-stop(1, #085EC7)
+);
+background-image: -o-linear-gradient(bottom, $blue 0%, $dark-blue 100%);
+background-image: -moz-linear-gradient(bottom,$blue 0%, $dark-blue 100%);
+background-image: -webkit-linear-gradient(bottom, $blue 0%, $dark-blue 100%);
+background-image: -ms-linear-gradient(bottom, $blue 0%, $dark-blue 100%);
+background-image: linear-gradient(to bottom, $blue 0%, $dark-blue 100%);
+color:$white; padding-top:200px; padding-bottom:100px;
+    
+}
+
+.blueblue4 {
+background:$dark-blue;
+color:$white; padding:100px 0;    
+}
+
+.bbblue {color:$bottom-blue;}
+
+p {font-size:2em; font-family:$font-family-serif;}
+
+.ppscp {max-width:100%; height:auto;}
+
+.content {width:100%; max-width:1000px; margin-left:auto; margin-right:auto; padding: 0 30px; height: auto;}
+
+a {
+    &:hover {
+       -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+    }
+}
+
+.bottomsup {width:100%; height: auto; margin-top:20px;
+&:hover {opacity:0.8;}
+}
+
+.smallrocket {width:300px; max-width:30%; height:auto;}
+
+.paddit {padding-bottom:250px;}
+
+.paddit2 {padding: 200px 0;}
+
+.blue-text {color:$blue;}
+
+.yellow-background {background:$yellow; color:$white;}
+
+.bonkerbonker {height:200px; width:auto;}
+
+.bonkerbonker3 {max-height: 150px; width: auto; max-width:80%;}
+
+.bonkerbonker2 {max-width:80%; height: auto;}
+
+@media (max-width:991px) {
+    .bonkerbonker {margin-bottom:20px;}
+}
+
+.slow-it-down-not-a-lot {
+-moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.slow-it-down-some {
+-moz-animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.slow-it-down {
+-moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.slow-it-down-btw {
+-moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.slow-it-down-btw2 {
+-moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.slow-it-down-more {
+-moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.slow-it-down-little-more {
+-moz-animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+
+.slow-it-down-even-more {
+-moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: #d22328;    
+}
+
+.loader img{margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;}
+
+#step-1 h1, #step-2 h1, #step-3 h1 {
+    padding-top:200px;
+}
+
+
+.begin-arrow {width:150px; height:auto; margin-bottom:-70px;}
+
+.begin-arrow-1 {width:200px; height:auto; margin-bottom:-70px;}
+
+.continue-arrow {width:150px; height:auto;}
+
+.navbar {display:none;}
+
+.lilili {height:400px;}
+
+#second {margin-bottom:150px;}
+
+#ppscp {padding-top:150px;}
+
+.mb100 {margin-bottom:100px;}
+
+.pb100 {padding-bottom:100px;}
+
+.pb50 {padding-bottom:50px;}
+.pt150 {padding-top:150px;}
+
+.pt15 {padding-top:15px;}
+
+.pt100 {padding-top:100px;}
+
+.pt200 {padding-top:200px;}
+
+.mb150 {margin-bottom:150px;}
+
+.pb250 {padding-bottom:250px;}
+
+.pt250 {padding-top: 250px;}
+
+.pb150 {padding-bottom: 150px;}
+
+.mt-20 {margin-top:-20px;}
+
+.mt150 {margin-top:150px;}
+
+.mt170 {margin-top:-170px;}
+
+$mobile-calc: (2/5);
+$third: (1/3);
+
+.darr {display:none;}
+
+@media (max-height:700px) {
+    .mb100 {margin-bottom:100px*$mobile-calc;}
+    p.mb100 {font-size:1.6em;}
+    .pb100 {padding-bottom:100px*$mobile-calc;}
+    .pb50 {padding-bottom:50px*$mobile-calc;}
+    .pt150 {padding-top:150px*$mobile-calc;}
+    .pt15 {padding-top:15px*$mobile-calc;}
+    .pt100 {padding-top:100px*$mobile-calc;}
+    .mt150 {margin-top:150px*$mobile-calc;}
+    .pt200 {padding-top:200px*$mobile-calc;}
+    .mb150 {margin-bottom:150px*$mobile-calc;}
+    .pt250 {padding-top: 100px;}
+    .pb150 {padding-bottom: 100px;}
+    #second {margin-bottom:150px*$mobile-calc;}
+    #ppscp {padding-top:150px*$mobile-calc;}
+    .blueblue {padding:300px*$third 0;}
+    .blueblue4 {padding:100px*$third 0;    
+}
+    #home, #history {padding:50px 0;}
+    .begin-arrow {width:150px*$third; height:auto; margin-bottom:-30px;}
+    .begin-arrow-1 {width:200px*$third; height:auto; margin-bottom:-30px;}
+    .continue-arrow {width:150px*$third; height:auto;}
+    h1.homeh1 {font-size:3em;}
+    h1#fourth {font-size:2em;}
+    .darr {display:block; font-size:1.3em; margin-top:-20px; color:$blue;}
+    .darr2 {display:block; font-size:1.3em; margin-top:-20px; color:$white;}
+    .bloons {margin-top:-50px;}
+    .paddit {padding-bottom:250px*$mobile-calc;}
+    .paddit2 {padding: 200px*$mobile-calc 0;}
+    .mt-20 {margin-top:10px;}
+    .blueblue4 h1 {font-size:2em;}
+    .blueblue4 p {font-size:1.2em;}
+    .mobilesm {font-size:1.3em;}
+    #step-1 h1, #step-2 h1, #step-3 h1 {
+    padding-top:200px*$mobile-calc;}
+    .btn-lg {margin-bottom:10px; margin-left:auto; margin-right:auto;}
+    .globular {width:50px; height:50px;}
+    .mt170 {margin-top:-170px*$third;}
+    .hideonmobile {display:none;}
+}

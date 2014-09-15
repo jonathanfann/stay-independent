@@ -1,4 +1,4 @@
--Stay Independent
+Stay Independent
 =================
 
 Responsive one page layout campaign with loads of CSS3 animations.
